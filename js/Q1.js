@@ -8,11 +8,6 @@ function toggleLight() {
   image.src = state ? "img/on.jpg" : "img/off.jpg";
 }
 
-
-var timeLeft = 0;
-var setting = 0;
-
-
 function setTime(){
   var time = document.getElementById('time').value;
   if (isNaN(time)) {
