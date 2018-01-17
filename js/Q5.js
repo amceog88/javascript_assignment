@@ -4,7 +4,7 @@ function createToDo(){
 
   var input = document.getElementById('input').value;
   if ( input == "" ) {
-    input = "根本亂來";
+    input = "廢文";
   }
   span.innerHTML = input;
   todo.appendChild(span);
