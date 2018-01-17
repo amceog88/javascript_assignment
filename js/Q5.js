@@ -1,22 +1,23 @@
-
-
 function createToDo(){
   var todo = document.createElement("div");
   var span = document.createElement("span");
 
-  var input = document.getElementById("input").value;
-  if (input == "") {
-    input = "廢文一篇";
+  var input = document.getElementById('input').value;
+  if ( input == "" ) {
+    input = "根本亂來";
   }
   span.innerHTML = input;
   todo.appendChild(span);
 
 
 // todolist color
-  if (urgent = document.getElementById("urgent").checked) {
-    this.parentNode.firstChild.style.color = "red";
+
+  var eilig = document.getElementById("eilig");
+
+  if (eilig.level.value == "urgent"){
+    span.style.color = "red";
   } else {
-    this.parentNode.firstChild.style.color = "darkgreen";
+    span.style.color = "darkgreen";
   }
 
 /* replace */
@@ -47,6 +48,7 @@ function createToDo(){
   }
   removeButton.textContent = "V";
   todo.appendChild(removeButton);
+
 
   document.getElementById("todolist").appendChild(todo);
   document.getElementById("input").value = "";
