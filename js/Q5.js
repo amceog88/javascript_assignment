@@ -49,7 +49,7 @@ function createToDo(){
   removeButton.textContent = "V";
   todo.appendChild(removeButton);
 
-
+//印出
   document.getElementById("todolist").appendChild(todo);
   document.getElementById("input").value = "";
 }
